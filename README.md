@@ -1,19 +1,23 @@
 # Echo Zhou — Engineering Portfolio
 
-A responsive personal engineering portfolio built with HTML, CSS, and a small amount of JavaScript.
+Static HTML/CSS/JS portfolio. Open `index.html` to preview; upload the four website files to your static host to publish.
 
-## Publish with GitHub Pages
+## Real project images
 
-1. Upload `index.html`, `style.css`, and `script.js` to the root of your repository.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Select branch `main` and folder `/ (root)`, then save.
-5. Wait for GitHub Pages to publish the site.
+The original site had CSS-drawn robot/oven/aircraft illustrations. This revised version uses actual still-image thumbnails supplied by YouTube for the **same four project demonstration videos linked in the site**. No fabricated/project-claim AI imagery is used.
 
-## Customize
+The four photo sources in `index.html` are:
+- Field-Following Robot: `https://img.youtube.com/vi/vyunetPvFeU/hqdefault.jpg`
+- Reflow Oven Controller: `https://img.youtube.com/vi/0cKG8GmRV-M/hqdefault.jpg`
+- Self-Balancing Robot: `https://img.youtube.com/vi/3sPnP8wL4Qw/hqdefault.jpg`
+- F4U Corsair: `https://img.youtube.com/vi/JYjuTau4yhs/hqdefault.jpg`
 
-- Update the email address in `index.html` if needed.
-- Replace project video links if you have newer links.
-- Add a resume PDF to the repository and link it from the page if desired.
+**Note:** These are remote YouTube thumbnails and require internet access. Their actual visual contents could not be preview-verified in the development environment. If a video has a custom thumbnail rather than a build photo, replace the corresponding `<img src>` with a genuine photo or screenshot of your own project (e.g. `images/reflow.jpg`). Do not use unrelated stock photos as evidence of completed projects.
 
-The portfolio content is based on the project descriptions supplied by Echo Zhou. The abstract project illustrations are CSS artwork, not photographs of the actual builds.
+## Editing
+
+Change copy in `index.html`, styles in `style.css`. `script.js` is unchanged.
+
+
+## Original project photos
+All local images in `images/` were extracted from the user-supplied two-page Engineering Project Portfolio PDF. No AI-generated images or third-party stock photos are used. Images are bundled with the site for reliable hosting.
