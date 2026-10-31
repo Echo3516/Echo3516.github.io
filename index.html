@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Echo Zhou — Electrical Engineering student at the University of British Columbia. Engineering projects in embedded systems, robotics, controls, and CAD.">
+  <title>Echo Zhou | Electrical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="nav">
+      <a class="brand" href="#home"><span class="brand-mark">EZ</span><span>Echo Zhou</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="mailto:zhou3516m@gmail.com">Let's connect <span>↗</span></a>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> ELECTRICAL ENGINEERING · UBC</p>
+          <h1>Building ideas<br>into <span>working systems.</span></h1>
+          <p class="hero-text">I'm Echo Zhou, an Electrical Engineering student at the University of British Columbia. I enjoy bringing hardware and software together through embedded systems, robotics, and hands-on engineering projects.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#projects">Explore projects <span>↓</span></a>
+            <a class="text-link" href="mailto:zhou3516m@gmail.com">Get in touch <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="card-top"><span>ENGINEERING / 2026</span><span class="status"><i></i> OPEN TO OPPORTUNITIES</span></div>
+          <div class="orbit-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+            <div class="core">EZ</div><span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span>
+          </div>
+          <div class="card-bottom"><span>HARDWARE</span><span>+ SOFTWARE</span><span>+ PROBLEM SOLVING</span></div>
+        </div>
+        <div class="hero-index">01 / PORTFOLIO</div>
+      </section>
+
+      <section class="intro-strip" id="about">
+        <div class="strip-label">A LITTLE ABOUT ME</div>
+        <p>Curious by nature and practical in approach. I like understanding how a system works, testing it in the real world, and iterating until the pieces come together.</p>
+        <div class="strip-meta"><span>VANCOUVER, BC</span><span>UNIVERSITY OF BRITISH COLUMBIA</span></div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <div><p class="eyebrow">SELECTED WORK / 2024—2026</p><h2>Engineering projects<span class="accent">.</span></h2></div>
+          <p class="section-note">A selection of collaborative and individual work across mechanical design, embedded systems, sensing, and control.</p>
+        </div>
+
+        <article class="project project-featured">
+          <div class="project-visual robot-visual">
+            <div class="visual-label">01 — ROBOTICS / CONTROL</div>
+            <div class="robot-drawing"><div class="robot-wheel left"></div><div class="robot-wheel right"></div><div class="robot-body"><span class="robot-dot"></span><span class="robot-line"></span></div><div class="signal signal-one"></div><div class="signal signal-two"></div></div>
+            <span class="visual-caption">FIELD-FOLLOWING SYSTEM</span>
+          </div>
+          <div class="project-info">
+            <div class="project-kicker">ROBOTICS · EMBEDDED PROGRAMMING</div>
+            <h3>Field-Following Robot</h3>
+            <p class="project-desc">A mobile robot designed to follow a magnetic guide wire while also accepting manual directional commands. The project combined autonomous tracking with a joystick-based remote controller.</p>
+            <h4>My contributions</h4>
+            <ul>
+              <li>Designed and implemented the joystick-based remote controller to generate directional commands.</li>
+              <li>Integrated remote-control code with the robot’s field-following logic, enabling switching between manual control and autonomous tracking.</li>
+              <li>Tuned steering responses and corrected insufficient turns through repeated track trials.</li>
+            </ul>
+            <div class="tags"><span>Joystick Input</span><span>Remote Control</span><span>Embedded C</span><span>Field Tracking</span></div>
+            <a class="project-link" href="https://youtu.be/vyunetPvFeU?si=JGhT-soPVKFWAY98" target="_blank" rel="noopener">Watch project video <span>↗</span></a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="mini-visual thermal"><div class="visual-label">02 — SENSING / DISPLAY</div><div class="lcd"><div class="lcd-line">TEMP:  235.0 C</div><div class="lcd-line">STATUS: REFLOW</div></div><div class="heat-lines"></div></div>
+            <div class="project-card-content">
+              <div class="project-kicker">EMBEDDED SYSTEMS · INSTRUMENTATION</div>
+              <h3>Reflow Oven Controller</h3>
+              <p>A temperature controller integrating sensing, analog-to-digital conversion, and real-time display on the DE1-SoC platform.</p>
+              <h4>My contributions</h4>
+              <ul>
+                <li>Integrated a K-type thermocouple amplifier and LM335 cold-junction sensor with an ADC.</li>
+                <li>Developed routines to display voltage and temperature on a 16×2 LCD and seven-segment displays.</li>
+                <li>Diagnosed sensor, ADC, and wiring issues through bench measurements and iterative testing.</li>
+              </ul>
+              <div class="tags"><span>DE1-SoC</span><span>ADC</span><span>Thermocouple</span><span>LCD</span></div>
+              <a class="project-link" href="https://youtu.be/0cKG8GmRV-M" target="_blank" rel="noopener">Watch project video <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="mini-visual balance"><div class="visual-label">03 — CONTROL / BLE</div><div class="balance-bot"><div class="balance-head"></div><div class="balance-stem"></div><div class="balance-board"></div><div class="balance-wheel"></div></div><div class="angle-mark">θ</div></div>
+            <div class="project-card-content">
+              <div class="project-kicker">ROBOTICS · CONTROL SYSTEMS</div>
+              <h3>Self-Balancing Robot</h3>
+              <p>A two-wheel robot designed to maintain balance while responding to movement commands, combining inertial sensing, encoder feedback, motor control, and BLE.</p>
+              <h4>My contributions</h4>
+              <ul>
+                <li>Integrated Arduino Nano 33 BLE Sense, BMI270 IMU, DRV8871 motor drivers, and quadrature encoders.</li>
+                <li>Implemented complementary-filter angle estimation and cascaded balance, velocity, and turning control loops.</li>
+                <li>Developed BLE commands and used serial data logging to troubleshoot movement behavior.</li>
+              </ul>
+              <div class="tags"><span>Arduino</span><span>IMU</span><span>Encoders</span><span>BLE</span></div>
+              <a class="project-link" href="https://youtu.be/3sPnP8wL4Qw" target="_blank" rel="noopener">Watch project video <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-wide">
+            <div class="mini-visual aircraft"><div class="visual-label">04 — MECHANICAL DESIGN / CAD</div><div class="plane"><div class="plane-wing"></div><div class="plane-body"></div><div class="plane-tail"></div><div class="plane-prop"></div></div><span class="blueprint-text">F4U / CORSAIR</span></div>
+            <div class="project-card-content">
+              <div class="project-kicker">SOLIDWORKS · 3D CAD · TEAM DESIGN</div>
+              <h3>F4U Corsair — SolidWorks Model</h3>
+              <p>A collaborative CAD project to create a three-dimensional model of an F4U Corsair aircraft using SolidWorks. Team members contributed different aircraft components to the overall model.</p>
+              <h4>My contributions</h4>
+              <ul>
+                <li>Took primary responsibility for modeling the F4U Corsair’s landing gear using SolidWorks.</li>
+                <li>Collaborated with teammates responsible for other aircraft components to develop the complete aircraft model.</li>
+                <li>Contributed to the group’s final project presentation by showcasing the landing-gear design within the overall aircraft model.</li>
+              </ul>
+              <div class="tags"><span>SolidWorks</span><span>3D CAD</span><span>Component Modeling</span><span>Team Collaboration</span></div>
+              <a class="project-link" href="https://youtu.be/JYjuTau4yhs?si=Fjf8biQQkLaMeUwC" target="_blank" rel="noopener">Watch project video <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <div><p class="eyebrow">TOOLS & INTERESTS</p><h2>What I work with<span class="accent">.</span></h2></div>
+        <div class="skill-list">
+          <div><span>01</span><b>Embedded systems</b><small>Microcontrollers · C · Peripheral integration</small></div>
+          <div><span>02</span><b>Hardware & testing</b><small>Sensors · ADC · Motor drivers · Debugging</small></div>
+          <div><span>03</span><b>Robotics & control</b><small>IMU · Encoders · Feedback control · BLE</small></div>
+          <div><span>04</span><b>Design & development</b><small>SolidWorks · 3D CAD · System integration</small></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
+        <h2>Let's build<br>something <span>meaningful.</span></h2>
+        <a class="button button-light" href="mailto:zhou3516m@gmail.com">zhou3516m@gmail.com <span>↗</span></a>
+        <div class="contact-note">Electrical Engineering · University of British Columbia · Vancouver, BC</div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#home"><span class="brand-mark">EZ</span><span>Echo Zhou</span></a><span>© 2026 Echo Zhou. Built with curiosity.</span><a href="#home">BACK TO TOP ↑</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
